@@ -1,0 +1,13 @@
+coverage_service: cobertura_xml
+xcodeproj: AlamofireSync.xcodeproj
+scheme: AlamofireSync-iOS
+source_directory: Source/
+output_directory: Reports/coverage
+ignore:
+  - Tests/*
+  - UITests/*
+  - Example/*
+  - Carthage/*
+  - Pods/*
+  - Module/*
+  - Submodule/*

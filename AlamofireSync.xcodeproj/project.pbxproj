@@ -1,0 +1,1290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A75C12D124B6E88900C45A61 /* AlamofireSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C12D024B6E88900C45A61 /* AlamofireSync.swift */; };
+		A75C12D224B6E88900C45A61 /* AlamofireSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C12D024B6E88900C45A61 /* AlamofireSync.swift */; };
+		A75C12D324B6E88900C45A61 /* AlamofireSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C12D024B6E88900C45A61 /* AlamofireSync.swift */; };
+		A75C12D424B6E88900C45A61 /* AlamofireSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C12D024B6E88900C45A61 /* AlamofireSync.swift */; };
+		A75C12E124B82B1000C45A61 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3DF24B6E4E000913860 /* Alamofire.framework */; };
+		A75C12E224B82B2100C45A61 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3EE24B6E70C00913860 /* Alamofire.framework */; };
+		A75C12E324B82B2700C45A61 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3F024B6E71500913860 /* Alamofire.framework */; };
+		A777B38424B6D97100913860 /* AlamofireSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B37A24B6D97000913860 /* AlamofireSync.framework */; };
+		A777B38924B6D97100913860 /* AlamofireSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A777B38824B6D97100913860 /* AlamofireSyncTests.swift */; };
+		A777B38B24B6D97100913860 /* AlamofireSync.h in Headers */ = {isa = PBXBuildFile; fileRef = A777B37D24B6D97000913860 /* AlamofireSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A777B3A224B6D9BB00913860 /* AlamofireSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B39924B6D9BA00913860 /* AlamofireSync.framework */; };
+		A777B3BE24B6D9C900913860 /* AlamofireSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3B524B6D9C900913860 /* AlamofireSync.framework */; };
+		A777B3D924B6E0F300913860 /* AlamofireSync.h in Headers */ = {isa = PBXBuildFile; fileRef = A777B37D24B6D97000913860 /* AlamofireSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A777B3DA24B6E0F800913860 /* AlamofireSync.h in Headers */ = {isa = PBXBuildFile; fileRef = A777B37D24B6D97000913860 /* AlamofireSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A777B3DB24B6E0FC00913860 /* AlamofireSync.h in Headers */ = {isa = PBXBuildFile; fileRef = A777B37D24B6D97000913860 /* AlamofireSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A777B3E024B6E4E000913860 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3DF24B6E4E000913860 /* Alamofire.framework */; };
+		A777B3EF24B6E70C00913860 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3EE24B6E70C00913860 /* Alamofire.framework */; };
+		A777B3F124B6E71500913860 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3F024B6E71500913860 /* Alamofire.framework */; };
+		A777B3F324B6E71B00913860 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3F224B6E71A00913860 /* Alamofire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A777B38524B6D97100913860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A777B37124B6D97000913860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A777B37924B6D97000913860;
+			remoteInfo = AlamofireSync;
+		};
+		A777B3A324B6D9BB00913860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A777B37124B6D97000913860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A777B39824B6D9BA00913860;
+			remoteInfo = "AlamofireSync-macOS";
+		};
+		A777B3BF24B6D9C900913860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A777B37124B6D97000913860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A777B3B424B6D9C900913860;
+			remoteInfo = "AlamofireSync-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A75C12D024B6E88900C45A61 /* AlamofireSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireSync.swift; sourceTree = "<group>"; };
+		A777B37A24B6D97000913860 /* AlamofireSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A777B37D24B6D97000913860 /* AlamofireSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamofireSync.h; sourceTree = "<group>"; };
+		A777B37E24B6D97000913860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A777B38324B6D97100913860 /* AlamofireSync-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AlamofireSync-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A777B38824B6D97100913860 /* AlamofireSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireSyncTests.swift; sourceTree = "<group>"; };
+		A777B38A24B6D97100913860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A777B39924B6D9BA00913860 /* AlamofireSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A777B3A124B6D9BB00913860 /* AlamofireSync-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AlamofireSync-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A777B3B524B6D9C900913860 /* AlamofireSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A777B3BD24B6D9C900913860 /* AlamofireSync-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AlamofireSync-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A777B3D124B6D9D700913860 /* AlamofireSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A777B3DF24B6E4E000913860 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A777B3EE24B6E70C00913860 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		A777B3F024B6E71500913860 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
+		A777B3F224B6E71A00913860 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A777B37724B6D97000913860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B3E024B6E4E000913860 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B38024B6D97100913860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B38424B6D97100913860 /* AlamofireSync.framework in Frameworks */,
+				A75C12E124B82B1000C45A61 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B39624B6D9BA00913860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B3EF24B6E70C00913860 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B39E24B6D9BB00913860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B3A224B6D9BB00913860 /* AlamofireSync.framework in Frameworks */,
+				A75C12E224B82B2100C45A61 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3B224B6D9C900913860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B3F124B6E71500913860 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3BA24B6D9C900913860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B3BE24B6D9C900913860 /* AlamofireSync.framework in Frameworks */,
+				A75C12E324B82B2700C45A61 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3CE24B6D9D700913860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B3F324B6E71B00913860 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A777B37024B6D97000913860 = {
+			isa = PBXGroup;
+			children = (
+				A777B37C24B6D97000913860 /* Source */,
+				A777B38724B6D97100913860 /* Tests */,
+				A777B37B24B6D97000913860 /* Products */,
+				A777B3DE24B6E4E000913860 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A777B37B24B6D97000913860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A777B37A24B6D97000913860 /* AlamofireSync.framework */,
+				A777B38324B6D97100913860 /* AlamofireSync-iOSTests.xctest */,
+				A777B39924B6D9BA00913860 /* AlamofireSync.framework */,
+				A777B3A124B6D9BB00913860 /* AlamofireSync-macOSTests.xctest */,
+				A777B3B524B6D9C900913860 /* AlamofireSync.framework */,
+				A777B3BD24B6D9C900913860 /* AlamofireSync-tvOSTests.xctest */,
+				A777B3D124B6D9D700913860 /* AlamofireSync.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A777B37C24B6D97000913860 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A777B37D24B6D97000913860 /* AlamofireSync.h */,
+				A75C12D024B6E88900C45A61 /* AlamofireSync.swift */,
+				A777B37E24B6D97000913860 /* Info.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A777B38724B6D97100913860 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A777B38824B6D97100913860 /* AlamofireSyncTests.swift */,
+				A777B38A24B6D97100913860 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A777B3DE24B6E4E000913860 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A777B3DF24B6E4E000913860 /* Alamofire.framework */,
+				A777B3EE24B6E70C00913860 /* Alamofire.framework */,
+				A777B3F024B6E71500913860 /* Alamofire.framework */,
+				A777B3F224B6E71A00913860 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A777B37524B6D97000913860 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B38B24B6D97100913860 /* AlamofireSync.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B39424B6D9BA00913860 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B3D924B6E0F300913860 /* AlamofireSync.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3B024B6D9C900913860 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B3DA24B6E0F800913860 /* AlamofireSync.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3CC24B6D9D700913860 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B3DB24B6E0FC00913860 /* AlamofireSync.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A777B37924B6D97000913860 /* AlamofireSync-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A777B38E24B6D97100913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-iOS" */;
+			buildPhases = (
+				A777B37524B6D97000913860 /* Headers */,
+				A777B37624B6D97000913860 /* Sources */,
+				A777B37724B6D97000913860 /* Frameworks */,
+				A777B37824B6D97000913860 /* Resources */,
+				A75C12DA24B7FD8B00C45A61 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlamofireSync-iOS";
+			productName = AlamofireSync;
+			productReference = A777B37A24B6D97000913860 /* AlamofireSync.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A777B38224B6D97100913860 /* AlamofireSync-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A777B39124B6D97100913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-iOSTests" */;
+			buildPhases = (
+				A777B37F24B6D97100913860 /* Sources */,
+				A777B38024B6D97100913860 /* Frameworks */,
+				A777B38124B6D97100913860 /* Resources */,
+				A75C12DE24B829D800C45A61 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A777B38624B6D97100913860 /* PBXTargetDependency */,
+			);
+			name = "AlamofireSync-iOSTests";
+			productName = AlamofireSyncTests;
+			productReference = A777B38324B6D97100913860 /* AlamofireSync-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A777B39824B6D9BA00913860 /* AlamofireSync-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A777B3AA24B6D9BB00913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-macOS" */;
+			buildPhases = (
+				A777B39424B6D9BA00913860 /* Headers */,
+				A777B39524B6D9BA00913860 /* Sources */,
+				A777B39624B6D9BA00913860 /* Frameworks */,
+				A777B39724B6D9BA00913860 /* Resources */,
+				A75C12DB24B7FDB300C45A61 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlamofireSync-macOS";
+			productName = "AlamofireSync-macOS";
+			productReference = A777B39924B6D9BA00913860 /* AlamofireSync.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A777B3A024B6D9BB00913860 /* AlamofireSync-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A777B3AD24B6D9BB00913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-macOSTests" */;
+			buildPhases = (
+				A777B39D24B6D9BB00913860 /* Sources */,
+				A777B39E24B6D9BB00913860 /* Frameworks */,
+				A777B39F24B6D9BB00913860 /* Resources */,
+				A75C12DF24B829E700C45A61 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A777B3A424B6D9BB00913860 /* PBXTargetDependency */,
+			);
+			name = "AlamofireSync-macOSTests";
+			productName = "AlamofireSync-macOSTests";
+			productReference = A777B3A124B6D9BB00913860 /* AlamofireSync-macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A777B3B424B6D9C900913860 /* AlamofireSync-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A777B3C624B6D9C900913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-tvOS" */;
+			buildPhases = (
+				A777B3B024B6D9C900913860 /* Headers */,
+				A777B3B124B6D9C900913860 /* Sources */,
+				A777B3B224B6D9C900913860 /* Frameworks */,
+				A777B3B324B6D9C900913860 /* Resources */,
+				A75C12DC24B7FE2B00C45A61 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlamofireSync-tvOS";
+			productName = "AlamofireSync-tvOS";
+			productReference = A777B3B524B6D9C900913860 /* AlamofireSync.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A777B3BC24B6D9C900913860 /* AlamofireSync-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A777B3C924B6D9C900913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-tvOSTests" */;
+			buildPhases = (
+				A777B3B924B6D9C900913860 /* Sources */,
+				A777B3BA24B6D9C900913860 /* Frameworks */,
+				A777B3BB24B6D9C900913860 /* Resources */,
+				A75C12E024B829EC00C45A61 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A777B3C024B6D9C900913860 /* PBXTargetDependency */,
+			);
+			name = "AlamofireSync-tvOSTests";
+			productName = "AlamofireSync-tvOSTests";
+			productReference = A777B3BD24B6D9C900913860 /* AlamofireSync-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A777B3D024B6D9D700913860 /* AlamofireSync-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A777B3D624B6D9D700913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-watchOS" */;
+			buildPhases = (
+				A777B3CC24B6D9D700913860 /* Headers */,
+				A777B3CD24B6D9D700913860 /* Sources */,
+				A777B3CE24B6D9D700913860 /* Frameworks */,
+				A777B3CF24B6D9D700913860 /* Resources */,
+				A75C12DD24B7FE5600C45A61 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlamofireSync-watchOS";
+			productName = "AlamofireSync-watchOS";
+			productReference = A777B3D124B6D9D700913860 /* AlamofireSync.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A777B37124B6D97000913860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = kojirof;
+				TargetAttributes = {
+					A777B37924B6D97000913860 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					A777B38224B6D97100913860 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A777B39824B6D9BA00913860 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					A777B3A024B6D9BB00913860 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A777B3B424B6D9C900913860 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					A777B3BC24B6D9C900913860 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A777B3D024B6D9D700913860 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = A777B37424B6D97000913860 /* Build configuration list for PBXProject "AlamofireSync" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A777B37024B6D97000913860;
+			productRefGroup = A777B37B24B6D97000913860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A777B37924B6D97000913860 /* AlamofireSync-iOS */,
+				A777B38224B6D97100913860 /* AlamofireSync-iOSTests */,
+				A777B39824B6D9BA00913860 /* AlamofireSync-macOS */,
+				A777B3A024B6D9BB00913860 /* AlamofireSync-macOSTests */,
+				A777B3B424B6D9C900913860 /* AlamofireSync-tvOS */,
+				A777B3BC24B6D9C900913860 /* AlamofireSync-tvOSTests */,
+				A777B3D024B6D9D700913860 /* AlamofireSync-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A777B37824B6D97000913860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B38124B6D97100913860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B39724B6D9BA00913860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B39F24B6D9BB00913860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3B324B6D9C900913860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3BB24B6D9C900913860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3CF24B6D9D700913860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A75C12DA24B7FD8B00C45A61 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		A75C12DB24B7FDB300C45A61 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		A75C12DC24B7FE2B00C45A61 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		A75C12DD24B7FE5600C45A61 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		A75C12DE24B829D800C45A61 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		A75C12DF24B829E700C45A61 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		A75C12E024B829EC00C45A61 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A777B37624B6D97000913860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75C12D124B6E88900C45A61 /* AlamofireSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B37F24B6D97100913860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A777B38924B6D97100913860 /* AlamofireSyncTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B39524B6D9BA00913860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75C12D224B6E88900C45A61 /* AlamofireSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B39D24B6D9BB00913860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3B124B6D9C900913860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75C12D324B6E88900C45A61 /* AlamofireSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3B924B6D9C900913860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A777B3CD24B6D9D700913860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75C12D424B6E88900C45A61 /* AlamofireSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A777B38624B6D97100913860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A777B37924B6D97000913860 /* AlamofireSync-iOS */;
+			targetProxy = A777B38524B6D97100913860 /* PBXContainerItemProxy */;
+		};
+		A777B3A424B6D9BB00913860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A777B39824B6D9BA00913860 /* AlamofireSync-macOS */;
+			targetProxy = A777B3A324B6D9BB00913860 /* PBXContainerItemProxy */;
+		};
+		A777B3C024B6D9C900913860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A777B3B424B6D9C900913860 /* AlamofireSync-tvOS */;
+			targetProxy = A777B3BF24B6D9C900913860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A777B38C24B6D97100913860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		A777B38D24B6D97100913860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		A777B38F24B6D97100913860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.AlamofireSync;
+				PRODUCT_NAME = AlamofireSync;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A777B39024B6D97100913860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.AlamofireSync;
+				PRODUCT_NAME = AlamofireSync;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A777B39224B6D97100913860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.AlamofireSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A777B39324B6D97100913860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.AlamofireSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A777B3AB24B6D9BB00913860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.AlamofireSync;
+				PRODUCT_NAME = AlamofireSync;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A777B3AC24B6D9BB00913860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.AlamofireSync;
+				PRODUCT_NAME = AlamofireSync;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A777B3AE24B6D9BB00913860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.AlamofireSync-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A777B3AF24B6D9BB00913860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.AlamofireSync-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A777B3C724B6D9C900913860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.AlamofireSync;
+				PRODUCT_NAME = AlamofireSync;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		A777B3C824B6D9C900913860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.AlamofireSync;
+				PRODUCT_NAME = AlamofireSync;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		A777B3CA24B6D9C900913860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.AlamofireSync-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		A777B3CB24B6D9C900913860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.AlamofireSync-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		A777B3D724B6D9D700913860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.AlamofireSync;
+				PRODUCT_NAME = AlamofireSync;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		A777B3D824B6D9D700913860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 767KBW5V62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.AlamofireSync;
+				PRODUCT_NAME = AlamofireSync;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A777B37424B6D97000913860 /* Build configuration list for PBXProject "AlamofireSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A777B38C24B6D97100913860 /* Debug */,
+				A777B38D24B6D97100913860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A777B38E24B6D97100913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A777B38F24B6D97100913860 /* Debug */,
+				A777B39024B6D97100913860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A777B39124B6D97100913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A777B39224B6D97100913860 /* Debug */,
+				A777B39324B6D97100913860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A777B3AA24B6D9BB00913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A777B3AB24B6D9BB00913860 /* Debug */,
+				A777B3AC24B6D9BB00913860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A777B3AD24B6D9BB00913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A777B3AE24B6D9BB00913860 /* Debug */,
+				A777B3AF24B6D9BB00913860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A777B3C624B6D9C900913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A777B3C724B6D9C900913860 /* Debug */,
+				A777B3C824B6D9C900913860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A777B3C924B6D9C900913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A777B3CA24B6D9C900913860 /* Debug */,
+				A777B3CB24B6D9C900913860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A777B3D624B6D9D700913860 /* Build configuration list for PBXNativeTarget "AlamofireSync-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A777B3D724B6D9D700913860 /* Debug */,
+				A777B3D824B6D9D700913860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A777B37124B6D97000913860 /* Project object */;
+}

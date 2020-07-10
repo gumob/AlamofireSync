@@ -1,0 +1,208 @@
+default_platform(:ios)
+
+#
+# Workaround for following error while executing `pod lib lint` and `pod trunk push`
+#
+# EXPANDED_CODE_SIGN_IDENTITY: unbound variable
+# Command PhaseScriptExecution failed with a nonzero exit code
+#
+# For more information is available at
+# https://github.com/CocoaPods/CocoaPods/issues/8000#issuecomment-434488071
+#
+ENV["EXPANDED_CODE_SIGN_IDENTITY"] = ""
+ENV["EXPANDED_CODE_SIGN_IDENTITY_NAME"] = ""
+ENV["EXPANDED_PROVISIONING_PROFILE"] = ""
+
+default_xcodeproj = ENV["DEFAULT_XCODEPROJ"]
+default_podspec = ENV["DEFAULT_PODSPEC"]
+
+scheme_iOS = ENV["SCHEME_IOS"]
+scheme_macOS = ENV["SCHEME_MACOS"]
+scheme_tvOS = ENV["SCHEME_TVOS"]
+
+scheme_iOSTests = ENV["SCHEME_IOS_TEST"]
+scheme_macOSTests = ENV["SCHEME_MACOS_TEST"]
+scheme_tvOSTests = ENV["SCHEME_TVOS_TEST"]
+
+framework_info_plist = "./Source/Info.plist"
+test_info_plist = "./Tests/Info.plist"
+
+platform :ios do
+
+    desc "Prebuild"
+    lane :prebuild do
+        tests
+        build_carthage
+        lint_cocoapods
+    end
+
+    ##########################################
+    # Versioning
+    ##########################################
+
+    desc "Set version number"
+    lane :set_version do
+        current_app_version = get_info_plist_value(path: framework_info_plist, key: 'CFBundleShortVersionString')
+        new_app_version = prompt(
+          text: "Please enter version number (Current: #{current_app_version}): ",
+          ci_input: current_app_version
+        )
+        regexp = Regexp.new("[0-9]+\.[0-9]+\.[0-9]+")
+        matched = regexp.match(new_app_version)
+        if matched then
+            set_info_plist_value(path: framework_info_plist, key: 'CFBundleShortVersionString', value: new_app_version)
+            set_info_plist_value(path: test_info_plist, key: 'CFBundleShortVersionString', value: new_app_version)
+            version_bump_podspec(path: default_podspec, version_number: new_app_version)
+            UI.message("Changed version from #{current_app_version} to #{new_app_version} ")
+        else
+            UI.error("Invalid version number. #{new_app_version}")
+        end
+    end
+
+    desc "Bump version number"
+    lane :bump_version do
+        bump_type = UI.select("Select version position to be upgraded: ", ["patch", "minor", "major"])
+        current_app_version = get_info_plist_value(path: framework_info_plist, key: 'CFBundleShortVersionString')
+        current_app_versions = current_app_version.split(".")
+        current_app_version_patch = current_app_versions[2].to_i
+        current_app_version_minor = current_app_versions[1].to_i
+        current_app_version_major = current_app_versions[0].to_i
+        UI.message(current_app_versions)
+        if bump_type == "patch" then
+            current_app_version_patch += 1
+        elsif bump_type == "minor" then
+            current_app_version_patch = 0
+            current_app_version_minor += 1
+        elsif bump_type == "major" then
+            current_app_version_patch = 0
+            current_app_version_minor = 0
+            current_app_version_major += 1
+        end
+        new_app_version = [current_app_version_major, current_app_version_minor, current_app_version_patch].join(".")
+        set_info_plist_value(path: framework_info_plist, key: 'CFBundleShortVersionString', value: new_app_version)
+        set_info_plist_value(path: test_info_plist, key: 'CFBundleShortVersionString', value: new_app_version)
+        version_bump_podspec(path: default_podspec, version_number: new_app_version)
+        UI.message("Changed version from #{current_app_version_major} to #{new_app_version} ")
+    end
+
+    ##########################################
+    # Test
+    ##########################################
+
+    desc "Run iOS Test"
+    lane :test_iOS do |options|
+        scan(
+            clean: false,
+            devices: ["iPhone Xs Max", "iPhone Xs (12.4)", "iPhone 8 Plus (11.4)", "iPhone 7 (10.3.1)",
+                        "iPad Pro (12.9-inch) (4th generation)", "iPad Air 2 (12.4)", "iPad Air 2 (11.4)", "iPad Air 2 (10.3.1)"],
+            scheme: scheme_iOS,
+            code_coverage: true,
+            only_testing: [],
+            # xcargs: "-UseNewBuildSystem=NO",
+            # max_concurrent_simulators: 1,
+        )
+        coverage
+        lint
+    end
+
+    desc "Run macOS Test"
+    lane :test_macOS do |options|
+        scan(
+            clean: false,
+            destination: "platform=macOS",
+            scheme: scheme_macOS,
+            code_coverage: true,
+            only_testing: [],
+            # xcargs: "-UseNewBuildSystem=NO",
+            # max_concurrent_simulators: 1,
+        )
+        coverage
+        lint
+    end
+
+    desc "Run tvOS Test"
+    lane :test_tvOS do |options|
+        scan(
+            clean: false,
+            devices: ["Apple TV (13.4)", "Apple TV (12.4)", "Apple TV (11.4)"],
+            scheme: scheme_tvOS,
+            code_coverage: true,
+            only_testing: [],
+            # xcargs: "-UseNewBuildSystem=NO",
+            # max_concurrent_simulators: 1,
+        )
+        coverage
+        lint
+    end
+
+    desc "Run All Test"
+    lane :test_all do |options|
+        test_iOS
+        test_macOS
+        test_tvOS
+        coverage
+        lint
+    end
+
+    desc "Run Coverage"
+    lane :coverage do |options|
+        slather(
+            html: true,
+            verbose: true,
+            show: true,
+        )
+    end
+
+    desc "Run Swiftlint"
+    lane :lint do |options|
+        swiftlint(
+        mode: :lint,
+        path: "Source/",
+        config_file: "../.swiftlint.yml",
+        ignore_exit_status: true,
+        )
+    end
+    
+    ##########################################
+    # Appledoc
+    ##########################################
+    desc "Create documentation"
+    lane :create_doc do |options|
+        jazzy(config: ".jazzy.yml")
+    end
+
+    ##########################################
+    # Package Manager
+    ##########################################
+    desc "Update Carthage"
+    lane :update_carthage do |options|
+        cache_builds = prompt(
+        text: "Enable cache build?",
+        boolean: true,
+        )
+        carthage(
+        command: "update",
+        cache_builds: cache_builds,
+        verbose: true,
+        )
+    end
+    desc "Build Carthage"
+    lane :build_carthage do |options|
+        carthage(
+            command: "build",
+            verbose: true,
+            no_skip_current: true
+        )
+    end
+
+    desc "Lint Cocoapods"
+    lane :lint_cocoapods do |options|
+        pod_lib_lint(verbose: true)
+    end
+
+    desc "Push Cocoapods"
+    lane :push_cocoapods do |options|
+        pod_lib_lint(verbose: true)
+        pod_push(path: default_podspec)
+    end
+end
