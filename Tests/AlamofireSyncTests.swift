@@ -25,8 +25,11 @@ class AlamofireSyncTests: XCTestCase {
         let response = AF.request("https://httpbin.org/image/jpeg")
                 .response()
         dump(response)
-        XCTAssertNotNil(response)
+        XCTAssertNotNil(response.value!)
         XCTAssertNil(response.error)
+        let image = UIImage(data: response.data!)
+        dump(image)
+        XCTAssertNotNil(image)
     }
 
     func testDataRequestData() throws {
@@ -35,6 +38,9 @@ class AlamofireSyncTests: XCTestCase {
         dump(response)
         XCTAssertNotNil(response)
         XCTAssertNil(response.error)
+        let image = UIImage(data: response.data!)
+        dump(image)
+        XCTAssertNotNil(image)
     }
 
     func testDataRequestGetJSON() throws {
