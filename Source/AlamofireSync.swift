@@ -9,47 +9,6 @@
 import Foundation
 import Alamofire
 
-// MARK: - PropertyList
-/// A `ResponseSerializer` that performs minimal response checking and returns any response `PropertyList` as-is. By default, a
-/// request returning `nil` or no data is considered an error. However, if the request has an `HTTPMethod` or the
-/// response has an  HTTP status code valid for empty responses, then an empty `Data` value is returned.
-public final class PropertyListResponseSerializer: ResponseSerializer {
-    public let dataPreprocessor: DataPreprocessor
-    public let emptyResponseCodes: Set<Int>
-    public let emptyRequestMethods: Set<HTTPMethod>
-
-    /// Creates an instance using the provided values.
-    ///
-    /// - Parameters:
-    ///   - dataPreprocessor:    `DataPreprocessor` used to prepare the received `Data` for serialization.
-    ///   - emptyResponseCodes:  The HTTP response codes for which empty responses are allowed. `[204, 205]` by default.
-    ///   - emptyRequestMethods: The HTTP request methods for which empty responses are allowed. `[.head]` by default.
-    public init(dataPreprocessor: DataPreprocessor = DataResponseSerializer.defaultDataPreprocessor,
-                emptyResponseCodes: Set<Int> = DataResponseSerializer.defaultEmptyResponseCodes,
-                emptyRequestMethods: Set<HTTPMethod> = DataResponseSerializer.defaultEmptyRequestMethods) {
-        self.dataPreprocessor = dataPreprocessor
-        self.emptyResponseCodes = emptyResponseCodes
-        self.emptyRequestMethods = emptyRequestMethods
-    }
-
-    public func serialize(request: URLRequest?, response: HTTPURLResponse?, data: Data?, error: Error?) throws -> Data {
-        guard error == nil else { throw error! }
-
-        guard var data = data, !data.isEmpty else {
-            guard emptyResponseAllowed(forRequest: request, response: response) else {
-                throw AFError.responseSerializationFailed(reason: .inputDataNilOrZeroLength)
-            }
-
-            return Data()
-        }
-
-        data = try dataPreprocessor.preprocess(data)
-
-        return data
-    }
-}
-
-
 extension DataRequest {
     /**
      Adds a handler using a `StringResponseSerializer` to be called once the request has finished.
@@ -154,13 +113,13 @@ extension DataRequest {
     }
     
     
-    /**
-     Wait for the request to finish then return the response value.
-     
-     - parameter options: The property list reading options. Defaults to `[]`.
-     
-     - returns: The response.
-     */
+//    /**
+//     Wait for the request to finish then return the response value.
+//
+//     - parameter options: The property list reading options. Defaults to `[]`.
+//
+//     - returns: The response.
+//     */
 //    public func responsePropertyList(options: PropertyListSerialization.ReadOptions = PropertyListSerialization.ReadOptions()) -> DataResponse<Any, AFError> {
 //        return response(responseSerializer: PropertyListResponseSerializer(options: options))
 //    }
@@ -237,13 +196,13 @@ extension DownloadRequest {
         return response(responseSerializer: StringResponseSerializer(encoding: encoding))
     }
     
-    /**
-     Wait for the request to finish then return the response value.
-     
-     - parameter options: The property list reading options. Defaults to `[]`.
-     
-     - returns: The response.
-     */
+//    /**
+//     Wait for the request to finish then return the response value.
+//
+//     - parameter options: The property list reading options. Defaults to `[]`.
+//
+//     - returns: The response.
+//     */
 //    public func responsePropertyList(options: PropertyListSerialization.ReadOptions = PropertyListSerialization.ReadOptions()) -> DownloadResponse<Any, AFError> {
 //        return response(responseSerializer: PropertyListResponseSerializer(options: options))
 //    }
