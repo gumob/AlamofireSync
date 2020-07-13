@@ -27,8 +27,13 @@ class AlamofireSyncTests: XCTestCase {
         dump(response)
         XCTAssertNotNil(response.value!)
         XCTAssertNil(response.error)
+        #if os(iOS) || os(tvOS)
         let image = UIImage(data: response.data!)
         XCTAssertNotNil(image)
+        #elseif os(OSX)
+        let image = NSImage(data: response.data!)
+        XCTAssertNotNil(image)
+        #endif
     }
 
     func testDataRequestData() throws {
@@ -37,8 +42,13 @@ class AlamofireSyncTests: XCTestCase {
         dump(response)
         XCTAssertNotNil(response)
         XCTAssertNil(response.error)
+        #if os(iOS) || os(tvOS)
         let image = UIImage(data: response.data!)
         XCTAssertNotNil(image)
+        #elseif os(OSX)
+        let image = NSImage(data: response.data!)
+        XCTAssertNotNil(image)
+        #endif
     }
 
     func testDataRequestGetJSON() throws {
@@ -97,8 +107,13 @@ class AlamofireSyncTests: XCTestCase {
         dump(response)
         XCTAssertNotNil(response)
         XCTAssertNil(response.error)
+        #if os(iOS) || os(tvOS)
         let image = UIImage(data: response.value!)
         XCTAssertNotNil(image)
+        #elseif os(OSX)
+        let image = NSImage(data: response.value!)
+        XCTAssertNotNil(image)
+        #endif
     }
 
     func testDownloadRequestJSON() throws {

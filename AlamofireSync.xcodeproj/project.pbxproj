@@ -14,6 +14,8 @@
 		A75C12E124B82B1000C45A61 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3DF24B6E4E000913860 /* Alamofire.framework */; };
 		A75C12E224B82B2100C45A61 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3EE24B6E70C00913860 /* Alamofire.framework */; };
 		A75C12E324B82B2700C45A61 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B3F024B6E71500913860 /* Alamofire.framework */; };
+		A75C12E424BC2C1D00C45A61 /* AlamofireSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A777B38824B6D97100913860 /* AlamofireSyncTests.swift */; };
+		A75C12E524BC2C1E00C45A61 /* AlamofireSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A777B38824B6D97100913860 /* AlamofireSyncTests.swift */; };
 		A777B38424B6D97100913860 /* AlamofireSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777B37A24B6D97000913860 /* AlamofireSync.framework */; };
 		A777B38924B6D97100913860 /* AlamofireSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A777B38824B6D97100913860 /* AlamofireSyncTests.swift */; };
 		A777B38B24B6D97100913860 /* AlamofireSync.h in Headers */ = {isa = PBXBuildFile; fileRef = A777B37D24B6D97000913860 /* AlamofireSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -645,6 +647,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75C12E424BC2C1D00C45A61 /* AlamofireSyncTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +663,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75C12E524BC2C1E00C45A61 /* AlamofireSyncTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
