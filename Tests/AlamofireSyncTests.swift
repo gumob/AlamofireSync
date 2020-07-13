@@ -28,7 +28,6 @@ class AlamofireSyncTests: XCTestCase {
         XCTAssertNotNil(response.value!)
         XCTAssertNil(response.error)
         let image = UIImage(data: response.data!)
-        dump(image)
         XCTAssertNotNil(image)
     }
 
@@ -39,13 +38,23 @@ class AlamofireSyncTests: XCTestCase {
         XCTAssertNotNil(response)
         XCTAssertNil(response.error)
         let image = UIImage(data: response.data!)
-        dump(image)
         XCTAssertNotNil(image)
     }
 
     func testDataRequestGetJSON() throws {
-        let response = AF.request("https://httpbin.org/get", parameters: ["foo": "bar"])
+        let response = AF.request("https://httpbin.org/json")
                 .responseJSON()
+        dump(response)
+        XCTAssertNotNil(response)
+        XCTAssertNil(response.error)
+    }
+
+    func testDataRequestPostJSON() throws {
+        let response = AF.request("https://httpbin.org/post",
+                        method: .post,
+                        parameters: ["foo": "bar"],
+                        encoding: JSONEncoding.default)
+                .responseJSON(options: .allowFragments)
         dump(response)
         XCTAssertNotNil(response)
         XCTAssertNil(response.error)
@@ -59,19 +68,11 @@ class AlamofireSyncTests: XCTestCase {
         XCTAssertNil(response.error)
     }
 
-    func testDataRequestPostJSON() throws {
-        let response = AF.request("https://httpbin.org/post", method: .post, parameters: ["foo": "bar"])
-                .responseJSON(options: .allowFragments)
-        dump(response)
-        XCTAssertNotNil(response)
-        XCTAssertNil(response.error)
-    }
-
     /** DownloadRequest */
     func testDownloadRequestNormal() throws {
         let destination: DownloadRequest.Destination = { _, _ in
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-            let fileURL = documentsURL.appendingPathComponent("response.txt")
+            let fileURL = documentsURL.appendingPathComponent("testDownloadRequestNormal.txt")
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
         let response = AF.download("https://httpbin.org/stream/100", method: .get, to: destination)
@@ -86,25 +87,27 @@ class AlamofireSyncTests: XCTestCase {
     func testDownloadRequestData() throws {
         let destination: DownloadRequest.Destination = { _, _ in
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-            let fileURL = documentsURL.appendingPathComponent("response.txt")
+            let fileURL = documentsURL.appendingPathComponent("testDownloadRequestData.jpg")
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
-        let response = AF.download("https://httpbin.org/stream/100", method: .get, to: destination)
+        let response = AF.download("https://httpbin.org/image/jpeg", method: .get, to: destination)
                 .downloadProgress { progress in
                     print("Download Progress: \(progress.fractionCompleted)")
                 }.responseData()
         dump(response)
         XCTAssertNotNil(response)
         XCTAssertNil(response.error)
+        let image = UIImage(data: response.value!)
+        XCTAssertNotNil(image)
     }
 
     func testDownloadRequestJSON() throws {
         let destination: DownloadRequest.Destination = { _, _ in
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-            let fileURL = documentsURL.appendingPathComponent("response.json")
+            let fileURL = documentsURL.appendingPathComponent("testDownloadRequestJSON.json")
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
-        let response = AF.download("https://httpbin.org/get", method: .get, parameters: ["foo": "bar"], to: destination)
+        let response = AF.download("https://httpbin.org/json", method: .get, to: destination)
                 .downloadProgress { progress in
                     print("Download Progress: \(progress.fractionCompleted)")
                 }.responseJSON()
@@ -116,7 +119,7 @@ class AlamofireSyncTests: XCTestCase {
     func testDownloadRequestString() throws {
         let destination: DownloadRequest.Destination = { _, _ in
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-            let fileURL = documentsURL.appendingPathComponent("response.json")
+            let fileURL = documentsURL.appendingPathComponent("testDownloadRequestString.txt")
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
         let response = AF.download("https://httpbin.org/robots.txt", to: destination)
@@ -127,11 +130,11 @@ class AlamofireSyncTests: XCTestCase {
         XCTAssertNotNil(response)
         XCTAssertNil(response.error)
     }
-    
+
     func testDownloadRequestQueue() throws {
         let destination: DownloadRequest.Destination = { _, _ in
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-            let fileURL = documentsURL.appendingPathComponent("response.txt")
+            let fileURL = documentsURL.appendingPathComponent("testDownloadRequestQueue.txt")
             return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
         let response = AF.download("https://httpbin.org/stream/100", method: .get, to: destination)

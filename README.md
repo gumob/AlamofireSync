@@ -37,7 +37,9 @@ pod 'AlamofireSync'
 
 ## Usage
 
-Request an image:
+See [AlamofireSyncTests.swift](https://github.com/gumob/AlamofireSync/blob/master/Tests/AlamofireSyncTests.swift) for more usage.
+
+#### Using Alamofire.DataRequest
 
 ```swift
 let response = AF.request("https://httpbin.org/image/jpeg")
@@ -46,6 +48,21 @@ if let data = response.data {
     let image = UIImage(data: data)
 }
 ```
+
+#### Using Alamofire.DownloadRequest
+
+```swift
+let destination: DownloadRequest.Destination = { _, _ in
+    let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+    let fileURL = documentsURL.appendingPathComponent("response.json")
+    return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+}
+let response = AF.download("https://httpbin.org/get", method: .get, parameters: ["foo": "bar"], to: destination)
+        .downloadProgress { progress in
+            print("Download Progress: \(progress.fractionCompleted)")
+        }.responseJSON()
+```
+
 
 ## Copyright
 
